@@ -1,0 +1,778 @@
+return and  argument 
+-------------------------------------------------------------------
+1)
+two number : user input 
+add() :
+sub()
+div()
+mul()
+mod()
+
+#include <stdio.h>
+
+int add(int a,int b);
+int sub(int a,int b);
+int divi(int a,int b);
+int multi(int a,int b);
+int mod(int a,int b);
+
+int main()
+{
+    
+    
+    int a,b;
+    
+    printf("Enter any number to add => ");
+    scanf("%d",&a);
+    
+    printf("Enter any number to add => ");
+    scanf("%d",&b);
+    
+    printf("Addition of two number is => %d",add(a,b));
+    
+    
+    printf("\n\nEnter any number to subtract => ");
+    scanf("%d",&a);
+    
+    printf("Enter any number to subtract => ");
+    scanf("%d",&b);
+    
+    printf("Subtraction of two number is => %d",sub(a,b));
+    
+    
+    printf("\n\nEnter any number to division => ");
+    scanf("%d",&a);
+    
+    printf("Enter any number to division => ");
+    scanf("%d",&b);
+    
+    printf("Division of two number is => %d",divi(a,b));
+    
+    
+    printf("\n\nEnter any number to multiplication => ");
+    scanf("%d",&a);
+    
+    printf("Enter any number to multiplication => ");
+    scanf("%d",&b);
+    
+    printf("Multiplication of two number is => %d",multi(a,b));
+    
+    
+    printf("\n\nEnter any number to modulus => ");
+    scanf("%d",&a);
+    
+    printf("Enter any number to modulus => ");
+    scanf("%d",&b);
+    
+    printf("Modulus of two number is => %d",mod(a,b));
+    
+    return 0;
+}
+
+
+int add(int a,int b){
+    
+    return a+b;
+}
+
+int sub(int a,int b){
+    
+    return a-b;
+}
+
+int divi(int a,int b){
+    
+    return a/b;
+}
+
+int multi(int a,int b){
+    
+    return a*b;
+}
+
+int mod(int a,int b){
+    
+    return a%b;
+}
+
+
+-------------------------------------------------------------------
+2)
+swap()
+voter()
+twoNumber() =>two number maximum 
+threeNumber() =>three number maximum
+value() =>100--->1 even number 
+armstrong() :armstrong number 
+
+
+#include <stdio.h>
+
+int swap(int a,int b);
+int voter(int age);
+int twoNumber(int a,int b);
+int threeNumber(int a,int b,int c);
+int value(int a,int b,int i);
+int armstrong(int num,int rem,int sum,int temp);
+
+int main()
+{
+    
+
+    
+    int a,b;
+    
+    printf("Enter first number => ");
+    scanf("%d",&a);
+    
+    printf("Enter second number => ");
+    scanf("%d",&b);
+    
+    printf("Swap of two number is => %d",swap(a,b));
+    
+    
+    int age;
+    
+    printf("\nEnter your age => ");
+    scanf("%d",&age);
+    
+    voter(age);
+    
+    
+    int aa,bb;
+    
+    printf("\nEnter first number => ");
+    scanf("%d",&aa);
+    
+    printf("Enter second number => ");
+    scanf("%d",&bb);
+    
+    twoNumber(aa,bb);
+    
+    
+    int a1,b1,c1;
+    
+    printf("\nEnter first number => ");
+    scanf("%d",&a1);
+    
+    printf("Enter second number => ");
+    scanf("%d",&b1);
+    
+    printf("Enter third number => ");
+    scanf("%d",&c1);
+    
+    threeNumber(a1,b1,c1);
+    
+    
+    int a2,b2,i;
+    
+    printf("\nEnter first number 100 => ");
+    scanf("%d",&a2);
+    
+    printf("Enter second number 1 => ");
+    scanf("%d",&b2);
+    
+    value(a2,b2,i);
+    
+    int num,rem,sum,temp;
+    
+    printf("\nEnter any number => ");
+    scanf("%d",&num);
+    
+    armstrong(num,rem,sum,temp);
+    
+    return 0;
+}
+
+
+int swap(int a,int b){
+    
+    a = a+b;
+    
+    b = a-b;
+    
+    a = a-b;
+    
+    return a;
+}
+
+int voter(int age){
+    
+    if(age >= 18){
+        
+        printf("You are eligible for voting\n");
+    }
+    else
+    {
+        printf("You are not eligible for voting\n");
+    }
+    
+    return age;
+}
+
+int twoNumber(int a,int b){
+    
+    if(a>b)
+    {    
+        printf("First number is maximum\n");
+    }
+    else if(b>a)
+    {
+        printf("Second number is maximum\n");
+    }
+    else{
+        printf("Both numbers are equal\n");
+    }
+    
+    return a;
+}
+
+int threeNumber(int a,int b,int c){
+    
+    if(a>b && a>c)
+    {
+        printf("First number is maximum\n");
+    }
+    else if(b>a && b>c)
+    {
+        printf("Second number is maximum\n");
+    }
+    else if(c>a && c>b)
+    {
+       printf("Third number is maximum\n"); 
+    }
+    else if(a == b || b == c || c == a)
+    {
+        printf("All three numbers are equal\n");
+    }
+    
+    return a;
+}
+
+int value(int a,int b,int i){
+    
+    for(i = a; i>= b; i--)
+    {
+        if(i%2 == 0)
+        {
+            printf("%d ",i);
+        }
+    }
+    
+    return i;
+}
+
+int armstrong(int num,int rem,int sum,int temp){
+    
+    temp = num;
+    
+    while(num>0)
+    {
+        rem = num%10;
+        sum = sum+(rem*rem*rem);
+        num = num/10;
+    }
+    
+    if(temp == sum)
+    {
+        printf("Number is armstrong");
+    }
+    else
+    {
+        printf("Number is not armstrong");
+    }
+    
+    return sum;
+}
+
+
+-------------------------------------------------------------------
+3)
+user input :character :
+g :gender function call
+a :armstrong number 
+p :pallindrome 
+f :factorial 
+c :count 
+r :reverse 
+b :fibonacci 
+v :voter id 
+m :marksheet making (grade)
+s :
+	w :with third variable :function call 
+	o :without third variable :function call
+
+w :week 
+n :month 
+t :table print 
+k :sum of natural numbers (1--->10)
+e :even odd 
+x :starting point and ending point :odd numbers print 
+j :starting point and ending table print (2---8)
+u :unit prgram (electricity code ) 
+z :ticket booking (adult 18 se jyada no discount )
+	18 se km 5%
+	50 se jyada 10% 
+	
+	
+	#include <stdio.h>
+char gender(char);
+int armstrong(int);
+int palindrome(int);
+int factorial(int);
+int count(int);
+int reverse();
+int fibonacci(int);
+int voter(int);
+float marksheet(float,float,float,float,float);
+char swap(char);
+int week(int);
+int month(int);
+int table(int);
+int sum(int,int);
+int even(int,int);
+int odd(int,int);
+int usertable(int,int);
+int unit(int);
+int ticket(int,int);
+int main()
+{
+    char A;
+    printf("Enter single character for proceed :");
+    scanf("%c",&A);
+    if(A=='g'){
+        char G;
+        printf("Press m for male & f for female :");
+        scanf(" %c",&G);
+        
+        printf(" %c",gender(G));
+    }
+    else if(A=='a'){
+        int num;
+        printf("Enter number for armstrong :");
+        scanf("%d",&num);
+        
+        armstrong(num);
+    }
+    else if(A=='p'){
+          int num;
+    printf("Enter number for palindrome:");
+    scanf("%d",&num);
+    
+    palindrome(num);
+    }
+    else if(A=='f'){
+        int num;
+    printf("Enter number to factorial:");
+    scanf("%d",&num);
+    
+    factorial(num);
+    }
+    else if(A=='c'){
+        int num;
+    printf("Enter number for count digit :");
+    scanf("%d",&num);
+    count(num);
+    }
+    else if(A=='r'){
+         int num;
+    printf("Enter number for reverse :");
+    scanf("%d",&num);
+    
+    reverse(num);
+    }
+    else if(A=='b'){
+        int num;
+    printf("Enter number for fibonacci :");
+    scanf("%d",&num);
+    fibonacci(num);
+    }
+    else if(A=='v'){
+    int age;
+    printf("Enter your age for voter eligibility :");
+    scanf("%d",&age);
+    voter(age);
+    }
+    else if(A=='m'){
+    float H,E,M,P,C;
+    printf("Enter hindi marks :");
+    scanf("%f",&H);
+    printf("Enter english marks :");
+    scanf("%f",&E);
+    printf("Enter math marks :");
+    scanf("%f",&M);
+    printf("Enter physics marks :");
+    scanf("%f",&P);
+    printf("Enter chemistry marks :");
+    scanf("%f",&C);
+    
+    marksheet(H,E,M,P,C);
+    }
+    else if(A=='s'){
+         char S;
+    printf("What type swap you want w & o :");
+    scanf(" %c",&S);
+    
+    swap(S);
+    }
+    else if(A=='w'){
+        int x;
+    printf("Enter week day number :");
+    scanf("%d",&x);
+    
+    week(x);
+    }
+    else if(A=='n'){
+        int a;
+    printf("Enter month number :");
+    scanf("%d",&a);
+    
+    month(a);
+    }
+    else if(A=='t'){
+         int n;
+    printf("Which number table you want :");
+    scanf("%d",&n);
+    
+    table(n);
+    }
+    else if(A=='k'){
+         int a,b;
+    printf("Enter starting point :");
+    scanf("%d",&a);
+    printf("Enter ending point :");
+    scanf("%d",&b);
+    
+    sum(a,b);
+    }
+    else if(A=='e'){
+        int a,b;
+    printf("Enter starting number :");
+    scanf("%d",&a);
+    printf("Enter Enter number :");
+    scanf("%d",&b);
+    
+    even(a,b);
+    }
+    else if(A=='x'){
+        int a,b;
+    printf("Enter starting number :");
+    scanf("%d",&a);
+    printf("Enter Enter number :");
+    scanf("%d",&b);
+    
+    odd(a,b);
+    }
+    else if(A=='j'){
+         int a,b;
+    printf("Enter starting number for table :");
+    scanf("%d",&a);
+      printf("Enter ending number for table :");
+    scanf("%d",&b);
+    
+    usertable(a,b);
+    }
+    else if(A=='u'){
+        int a;
+    printf("Enter you unit :");
+    scanf("%d",&a);
+    
+    unit(a);
+    }
+    else if(A=='z'){
+         int a,g;
+    printf("Enter Your ticket price :");
+    scanf("%d",&a);
+    printf("Enter Your age :");
+    scanf("%d",&g);
+    
+    ticket(a,g);
+    }
+    return 0;
+}
+char gender(char G){
+    if(G=='m'){
+            printf("Male");
+        }
+        else if(G=='f'){
+            printf("female");
+        }
+    return G;
+}
+int armstrong(int num){
+    int rem,sum,temp;
+    temp=num;
+        while(num>0){
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        if(temp==sum){
+            printf("armstrong number");
+        }
+        else{
+            printf("not armstrong");
+        }
+    return num;
+}
+int palindrome(int num){
+    int rem,sum,temp;
+     temp=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d\n",sum);
+    if(temp==sum){
+        printf("palindrome number");
+    }
+    else{
+        printf("not palindrome");
+    }
+    return num;
+}
+int factorial(int num){
+    int fact=1;
+     for(int i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    printf("%d",fact);
+    return num;
+}
+int count(int num){
+    int count;
+    while(num>0){
+        num=num/10;
+        count++;
+    }
+    printf("%d",count);
+    return num;
+}
+int reverse(int num){
+    int rem,sum;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d\n",sum);
+    return num;
+}
+int fibonacci(int num){
+    int n1=0,n2=1,n3;
+    printf("%d %d ",n1,n2);
+    for(int i=1;i<=num;i++){
+        n3=n1+n2;
+        printf("%d ",n3);
+        n1=n2;
+        n2=n3;
+    }
+    return num;
+}
+int voter(int age){
+      if(age>=18){
+        printf("You are eligible for vote");
+    }
+    else{
+        printf("not eligible for vote");
+    }
+    return age;
+}
+float marksheet(float H,float E,float M,float P,float C){
+     float percent;
+    percent=(H+E+M+P+C)/5;
+    printf("%f\n",percent);
+    if(percent<25){
+	printf("grade F");
+	}
+	else if(percent>=25 &&percent<=45){
+    	printf("grade E");
+	}
+	else if(percent>45 &&percent<=50){
+    	printf("grade D");
+	}
+	else if(percent>50 &&percent<60){
+    	printf("grade C");
+	}
+	else if(percent>=60 &&percent<80){
+    	printf("grade B");
+	}
+	else if(percent>=80 &&percent<=100){
+    	printf("grade A");
+	}
+    return percent;
+}
+char swap(char S){
+    if(S=='w'){
+    int a,b;
+    printf("Enter first number :");
+    scanf("%d",&a);
+    printf("Enter second number :");
+    scanf("%d",&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("first number swap is :%d\n",a);
+    printf("second number swap is :%d",b);
+    }
+    else if(S=='o'){
+        int a,b;
+    printf("Enter first number :");
+    scanf("%d",&a);
+    printf("Enter second number :");
+    scanf("%d",&b);
+    int c;
+    c=a;
+    a=b;
+    b=c;
+    printf("first number swap is :%d\n",a);
+    printf("second number swap is :%d",b);
+    }
+    return S;
+}
+int week(int x){
+     if(x==1){
+        printf("Monday");
+    }
+    else if(x==2){
+        printf("Tuesday");
+    }
+    else if(x==3){
+        printf("Wednesday");
+    }
+    else if(x==4){
+        printf("Thursday");
+    }
+    else if(x==5){
+        printf("Friday");
+    }
+    else if(x==6){
+        printf("Saturday");
+    }
+    else if(x==7){
+        printf("Sunday");
+    }
+    else{
+        printf("please enter number bitween 1 to 7");
+    }
+    return x;
+}
+int month(int a){
+     if(a==1){
+        printf("January");
+    }
+    else if(a==2){
+        printf("February");
+    }
+     else if(a==3){
+        printf("March");
+     }
+     else if(a==4){
+        printf("April");
+     }
+     else if(a==5){
+        printf("May");
+     }
+     else if(a==6){
+        printf("june");
+     }
+     else if(a==7){
+        printf("July");
+     }
+     else if(a==8){
+        printf("August");
+     }
+     else if(a==9){
+         printf("september");
+     }
+     else if(a==10){
+         printf("October");
+     }
+     else if(a==11){
+         printf("November");
+     }
+     else if(a==12){
+         printf("December");
+     }
+     else{
+         printf("Please Enter Number Between 1 to 12");
+     }
+    return a;
+}
+int table(int n){
+    for(int i=1;i<=10;i++){
+        printf("%d ",n*i);
+    }
+    return n;
+}
+int sum(int a,int b){
+       int sum;
+    for(int i=a;i<=b;i++){
+        sum=sum+i;
+    }
+    printf("%d",sum);
+    return sum;
+}
+int even(int a,int b){
+     while(a<=b){
+        if(a%2==0){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return a;
+}
+int odd(int a,int b){
+     while(a<=b){
+        if(a%2==1){
+            printf("%d ",a);
+        }
+        a++;
+    }
+    return a;
+}
+int usertable(int a,int b){
+      for(int i=a;i<=b;i++){
+        for(int j=1;j<=10;j++){
+            printf("%d ",i*j);
+        }
+        printf("\n");
+    }
+    return a;
+}
+int unit(int a){
+     int p=a*10;
+    printf("Your bill amount is :%d\n",p);
+    if(a<=10){
+        float d=p-10*p/100;
+        printf("pay amount after discount :%f",d);
+    }
+    else if(a>=11 && a<=20){
+         float d=p-15*p/100;
+        printf("pay amount after discount :%f",d);
+    }
+    else if(a>=21&&a<=40){
+        float d=p-30*p/100;
+        printf("pay amount after discount :%f",d);
+    }
+    else if(a>41){
+         float d=p-50*p/100;
+        printf("pay amount after discount :%f",d);
+    }
+    return a;
+}
+int ticket(int a,int g){
+    if(g<18){
+        int d=a-5*a/100;
+        printf("pay amount after discount: %d",d);
+    }
+    else if(g>50){
+        int d=a-10*a/100;
+        printf(" pay amount after discount: %d",d);
+    }
+    else{
+        printf("Your ticket price is :%d",a);
+    }
+    return a;
+}
