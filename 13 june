@@ -1,0 +1,108 @@
+prime number
+a)check number prime 
+
+public class Main{
+    public static void main(String[] args){
+        int a =7;
+        int i =2;
+
+        while(a>=i){
+            if(a%i==0){
+                break;
+            }
+            if(i==a-1){
+                System.out.println("Prime Number");
+            }
+            i++;
+        }
+    }
+}
+
+b)1--->100 prime number 
+
+public class Main{
+    public static void main(String[] args){
+        //System.out.println("enter a number ");
+        int a = 2;
+
+        for(int i=2;i<=100;i++){
+            for(a=2;a<=100;a++){
+                if(i%a==0){
+                    break;
+                }
+
+            }
+            if(a==i){
+                System.out.println(i);
+            }
+        }
+
+
+    }
+}
+
+
+-------------------------
+factorial 
+5 
+1*2*3*4*5
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int fact =1;
+        int num = 4;
+        int i;
+
+        for(i=1;i<=num;i++){
+            fact = fact*i;
+            
+        }
+        System.out.println("fact number is :"+fact);
+
+	}
+}
+-------------------------------------------
+fibonacci series 
+0 1 1 2 3 5 
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int n1=0;
+        int n2=1;
+        int n3;
+        for(int i=1;i<=5;i++){
+
+            n3=n1+n2;
+            n1=n2;
+            n2=n3;
+            System.out.println(n3);
+        }
+       
+	}
+}
+--------------------------------------
+use input :6743 =>4 digit 
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter a number :");
+        int num = dc.nextInt();
+
+		int count=0;
+        while(num>0){
+            count++;
+            num=num/10;
+        }
+        System.out.println(count);
+       
+	}
+}
