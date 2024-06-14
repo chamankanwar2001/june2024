@@ -1,0 +1,303 @@
+class A 
+add() 
+multi()
+
+class B
+sub()
+div()
+
+
+class Main
+mod() 
+
+main()
+access
+
+
+import java.util.*;
+
+class A{
+    void add(){
+    Scanner dc = new Scanner(System.in);
+
+    
+    //Scanner dc = new Scanner(System.in);
+
+    System.out.println("Enter Value of a :");
+    int a = dc.nextInt();
+
+    System.out.println("Enter value of b :");
+    int b = dc.nextInt();
+
+    int c = a+b;
+
+    System.out.println("Total add =" + c);
+}
+
+    public void multi() {
+        Scanner dc = new Scanner(System.in);
+
+    
+        //Scanner dc = new Scanner(System.in);
+    
+        System.out.println("Enter Value of a :");
+        int a = dc.nextInt();
+    
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+    
+        int c = a*b;
+    
+        System.out.println("Total Multi =" + c);
+    }
+
+
+}
+
+class B{
+    void sub(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a-b;
+
+        System.out.println("Total Sub = " + c);
+    }
+
+    void div(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a/b;
+
+        System.out.println("Total Div = " + c);
+
+    }
+
+}
+
+
+
+
+public class Main{
+
+    void mod(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a/b;
+
+        System.out.println("Total Mod = " + c);
+
+    }
+    public static void main(String[] args) {
+
+        A ad = new A();
+        ad.add();
+
+        A mu = new A();
+        mu.multi();
+
+        B su = new B();
+        su.sub();
+
+        B di = new B();
+        di.div();
+
+        Main mo = new Main();
+        mo.mod();
+ 
+    }
+}
+---------------------------------------------------
+class A 
+pallindrme() : code 
+neon()
+
+class B
+amrstrong () :
+factorial()
+
+
+class C 
+prime() :check 
+primeNumber() 1--->100
+
+class Main 
+main() :all method access 
+
+
+import java.util.*;
+
+class A{
+    void pallindrme(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of Num :");
+        int num = dc.nextInt();
+
+        int rem,sum=0;
+        int temp=num;
+        
+
+        while (num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+
+        if(temp==sum){
+            System.out.println("pallindrme Number");
+        }
+        else {
+            System.out.println("not a pallindrme Number");
+        }
+    }
+
+    void neon(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of Num :");
+        int num = dc.nextInt();
+
+        int rem,sum=0;
+
+        int sq=num*num;
+
+        while(sq>0){
+            rem=sq%10;
+            sum=sum+rem;
+            sq=sq/10;
+        }
+
+        if(sum==num){
+            System.out.println(num + " is a neon Number");
+        }
+        else{
+            System.out.println(num+"is not a neon Number");
+        }
+
+
+        
+    }
+}
+
+class B{
+    void amrstrong (){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of Num :");
+        int num = dc.nextInt();
+
+        int rem,sum=0;
+        int temp=num;
+
+        while(num>0){
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+
+        if(temp==sum){
+            System.out.println("amrstrong number");
+        }
+        else {
+            System.out.println("Not a amrstrong number ");
+        }
+    }
+
+    void factorial(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of Num :");
+        int num = dc.nextInt();
+
+        int fact = 1;
+
+        for(int i = 1 ; i<=num; i++){
+            fact = fact*i;
+        }
+        System.out.println(fact);
+
+    }
+}
+
+class C{
+
+    void prime(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of Num :");
+        int num = dc.nextInt();
+        int i = 2;
+
+        while(num>0){
+            if(num%i==0){
+                break;
+
+            }
+            if(i==num-1){
+                System.out.println("Prime Number");
+            }
+            i++;
+        }
+    }
+
+    void primeNumber(){
+        int a ;
+		
+		for(int i =2; i<=100;i++){
+		    for(a=2; a<=100; a++){
+		        if(i%a==0){
+		           break; 
+		        }
+		    }
+		    
+		    if(a == i){
+		        System.out.println(i);
+		    }
+		}
+    }
+
+
+}
+
+public class Main{
+    public static void main(String[] args) {
+
+        A pol = new A();
+        pol.pallindrme();
+
+        A ne = new A();
+        ne.neon();
+
+        B arm = new B();
+        arm.amrstrong();
+
+        B fac = new B();
+        fac.factorial();
+
+        C pri = new C();
+        pri.prime();
+
+        C prinum = new C();
+        prinum.primeNumber();
+        
+    }
+}
+
