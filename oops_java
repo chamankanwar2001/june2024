@@ -1,0 +1,372 @@
+no return and no argument :
+
+1)
+class A 
+even even method call ho (1--->100 even number)
+odd odd method call (check odd number ) 
+palindrome (palindrome)
+reverse (check reverse) 
+Armstrong (Armstrong)
+add (two number addition )
+sub (two number substraction)
+multi (two number multiply )
+
+class Main 
+main() :access 
+
+
+
+
+class A{
+        void even(){
+        int num=1;
+        for(num=1;num<=100;num++){
+            if(num %2==0){
+                System.out.println(num + " ");
+
+            }
+        }
+        System.out.println();
+    }
+
+
+    void odd(){
+        int num=1;
+        for(num=1;num<=100;num++){
+            if(num%2==1){
+                System.out.println(num +" ");
+
+
+            }
+        }
+
+    }
+
+    void palindrome(){
+        int num=1234321;
+        int rem,sum=0;
+        int temp=num;
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+
+
+        }
+        if(temp==sum){
+            System.out.println("this number is palindrome");
+        }
+        else{
+            System.out.println("this number is not palindrome");
+        }
+        
+    }
+
+
+
+    void reverse(){
+        int num=345;
+        int rem,sum=0;
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        System.out.println("reverse number");
+
+
+    }
+
+
+    void armstrong(){
+        int num=156;
+        int rem,sum=0;
+        int temp=num;
+        while(num>0){
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        if(temp==sum){
+            System.out.println("this number is armstrong");
+
+
+        }else{
+            System.out.println("this number is not a armtrong");
+
+
+        }
+
+    }
+
+    void add(){
+        int a=3,b=3,c;
+        c=a+b;
+        System.out.println(c);
+    }
+
+
+    void sub(){
+        int a=4,b=3,c;
+        c=a-b;
+        System.out.println(c);
+    }
+
+
+    void multi(){
+        int a=4,b=4,c;
+        c=a+b;
+        System.out.println(c);
+    }
+
+
+}
+
+
+    public class Main{
+        public static void main(String[] args){
+             A k =new A();
+            A k1=new A();
+            A k2 =new A();
+            A k3=new A();
+            A k4 =new A();
+            A k5 =new A();
+            A k6 =new A();
+            A k7 =new A();
+            k.even();
+            k1.odd();
+            k2.palindrome();
+            k3.reverse();
+            k4.armstrong();
+            k5.add();
+            k6.sub();
+            k7.multi();
+        }
+    }        
+            
+
+
+
+
+
+
+2)no return and no argument :
+ 
+class Main :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+main() :
+all method call 
+
+
+
+public class MMain {
+    void add(){
+        int a=3,b=4,c;
+        c=a+b;
+        System.out.println(c);
+    }
+
+
+    void sub(){
+        int a=3,b=4,c;
+        c=a-b;
+        System.out.println(c);
+
+    }
+    
+
+    void multi(){
+        int a=3,b=4,c;
+        c=a*b;
+        System.out.println(c);
+    }
+
+    void div(){
+        int a=3,b=4,c;
+        c=a/b;
+        System.out.println(c);
+    }
+
+    void modul(){
+        int a=3,b=4,c;
+        c=a%b;
+        System.out.println(c);
+    }
+    public static void main(String[] args){
+        MMain p=new MMain();
+        MMain p1=new MMain();
+        MMain p2=new MMain();
+        MMain p3=new MMain();
+        MMain p4=new MMain();
+        p.add();
+        p1.sub();
+        p2.multi();
+        p3.div();
+        p4.modul();
+
+
+
+
+    }
+}
+
+
+3)no return and no argument :
+
+class A :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+class Main :
+main() :
+all method call 
+
+
+
+class A{
+    void add(){
+        int a=3,b=4,c;
+        c=a+b;
+        System.out.println(c);
+    }
+
+
+    void sub(){
+        int a=3,b=4,c;
+        c=a-b;
+        System.out.println(c);
+
+    }
+    
+
+    void multi(){
+        int a=3,b=4,c;
+        c=a*b;
+        System.out.println(c);
+    }
+
+    void div(){
+        int a=3,b=4,c;
+        c=a/b;
+        System.out.println(c);
+    }
+
+    void modul(){
+        int a=3,b=4,c;
+        c=a%b;
+        System.out.println(c);
+    }
+
+}
+    public class MMain {
+    public static void main(String[] args){
+        A p=new A();
+        A p1=new A();
+        A p2=new A();
+        A p3=new A();
+        A p4=new A();
+        p.add();
+        p1.sub();
+        p2.multi();
+        p3.div();
+        p4.modul();
+
+
+
+
+    }
+}
+
+
+
+4)no return and no argument 
+class A :
+add() :two number addition
+
+class B
+sub() :two number subs
+
+class C
+div() :two number div
+
+class D
+multi() :two number multiplication
+
+class E 
+mod() :two number modular 
+
+class Main :
+main() :
+all method call 
+
+
+class A{
+    void add(){
+        int a=3,b=4,c;
+        c=a+b;
+        System.out.println(c);
+    }
+
+}
+class B{
+    void sub(){
+        int a=3,b=4,c;
+        c=a-b;
+        System.out.println(c);
+
+    }
+}
+
+    
+class C{
+    void multi(){
+        int a=3,b=4,c;
+        c=a*b;
+        System.out.println(c);
+    }
+}
+
+class D{
+    void div(){
+        int a=3,b=4,c;
+        c=a/b;
+        System.out.println(c);
+    }
+}
+
+class E{
+    void modul(){
+        int a=3,b=4,c;
+        c=a%b;
+        System.out.println(c);
+    }
+
+}
+    public class MMain {
+    public static void main(String[] args){
+        A p=new A();
+        B p1=new B();
+        C p2=new C();
+        D p3=new D();
+        E p4=new E();
+        p.add();
+        p1.sub();
+        p2.multi();
+        p3.div();
+        p4.modul();
+
+
+
+
+    }
+}
+
+
