@@ -1,0 +1,75 @@
+---------------------------------------------------
+class Bank 
+deposit :user amount :add
+withdraw :user amount :remove 
+
+import java.util.*;
+
+class Bank {
+    void deposit() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your name :");
+        String name = scanner.nextLine();
+
+        System.out.println("Enter F'name :");
+        String fname = scanner.nextLine();
+
+        System.out.println("Enter the bank account number:");
+        String accountnumber = scanner.nextLine();
+
+        int balance = 1000;
+        System.out.println("enter amout :");
+        int depositamount = scanner.nextInt();
+
+        int totalbalance = balance+depositamount;
+
+        System.out.println( "Name = "+name);
+        System.out.println("Father Name = "+fname);
+        System.out.println("Account Number = "+accountnumber);
+        System.out.println("TOtal available Balance = "+totalbalance);
+
+
+
+
+    }
+
+    void withdraw(){
+        
+            Scanner scanner = new Scanner(System.in);
+    
+            System.out.println("Enter your name :");
+            String name = scanner.nextLine();
+    
+            System.out.println("Enter F'name :");
+            String fname = scanner.nextLine();
+    
+            System.out.println("Enter the bank account number:");
+            String accountnumber = scanner.nextLine();
+    
+            int balance = 1000;
+
+            System.out.println("enter Withdrawal Amount :");
+            int depositamount = scanner.nextInt();
+    
+            int totalbalance = balance-depositamount;
+    
+            System.out.println( "Name = "+name);
+            System.out.println("Father Name = "+fname);
+            System.out.println("Account Number = "+accountnumber);
+            System.out.println("TOtal available Balance after Withdrawal = "+totalbalance);
+        
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+
+
+        Bank bn = new Bank();
+        bn.deposit();
+
+        Bank wd = new Bank();
+        wd.withdraw();
+    }
+}
