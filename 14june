@@ -1,0 +1,111 @@
+user input 
+
+Main class :
+add() 
+multi()
+sub()
+div()
+mod() 
+
+
+import java.util.*;
+public class Main{
+
+    void add(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a+b;
+
+        System.out.println("Total Value =" + c);
+            
+    }
+
+    void multi(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a*b;
+
+        System.out.println("Total Value =" + c);
+
+    }
+
+    void sub(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a-b;
+
+        System.out.println("Total Value =" + c);
+
+
+    }
+
+    void div(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a/b;
+
+        System.out.println("Total Value =" + c);
+
+    }
+
+    void mod(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a%b;
+
+        System.out.println("Total Value =" + c);
+
+    }
+
+
+    public static void main(String[] args){
+
+        Main ad = new Main();
+        ad.add();
+
+        Main mu = new Main();
+        mu.multi();
+
+        Main su = new Main();
+        su.multi();
+
+        Main di = new Main();
+        di.div();
+
+        Main mo = new Main();
+        mo.mod();
+
+
+    
+    }
+}
