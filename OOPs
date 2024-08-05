@@ -1,0 +1,202 @@
+//METHODS
+
+
+class Add {
+    public void add(int a, int b) {
+        System.out.println("Addition: " + (a + b));
+    }
+}
+
+
+class S {
+    public void subtract(int a, int b) {
+        System.out.println("Subtraction: " + (a - b));
+    }
+}
+
+
+class M {
+    public void multiply(int a, int b) {
+        System.out.println("Multiplication: " + (a * b));
+    }
+}
+
+
+class D {
+    public void divide(int a, int b) {
+        System.out.println("Division: " + (a / b));
+    }
+}
+
+
+class Mo {
+    public void mod(int a, int b) {
+        System.out.println("Modulus: " + (a % b));
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        new Add().add(10, 5);
+        new S().subtract(10, 5);
+        new M().multiply(10, 5);
+        new D().divide(10, 5);
+        new Mo().mod(10, 5);
+
+-------------------------------------------------
+    }
+}
+
+// ENCAPSULATION WITH GETTER AND SETTER METHODS
+import java.util.Scanner;
+
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age.");
+        }
+    }
+
+    public void show() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+// INHERITANCE AND POLYMORPHISM WITH  METHOD OVERRIDING
+class Student extends Person {
+    private String school;
+
+    public Student(String name, int age, String school) {
+        super(name, age);
+        this.school = school;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
+    }
+
+   
+    public void show() {
+        super.show();
+        System.out.println("School: " + school);
+    }
+}
+
+interface Action {
+    void perform();
+}
+
+class Work implements Action {
+    private String job;
+    private int hours;
+
+    
+    public Work(String job, int hours) {
+        this.job = job;
+        this.hours = hours;
+    }
+   
+    public void perform() {
+        System.out.println("Working as " + job + " for " + hours + " hours.");
+    }
+}
+
+public class Mainn {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter person name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter person age: ");
+        int age = scanner.nextInt();
+        scanner.nextLine();  
+
+        Person P = new Person(name, age);
+        P.show();
+
+        System.out.print("Enter student name: ");
+        name = scanner.nextLine();
+        System.out.print("Enter student age: ");
+        age = scanner.nextInt();
+        scanner.nextLine();  
+        System.out.print("Enter student school: ");
+        String school = scanner.nextLine();
+
+        Student L = new Student(name, age, school);
+        L.show();
+
+        
+        System.out.print("Enter job title: ");
+        String job = scanner.nextLine();
+        System.out.print("Enter number of hours: ");
+        int hours = scanner.nextInt();
+
+        Action K = new Work(job, hours);
+        K.perform();
+
+        
+    }
+}
+
+-----------------------------------------------------
+
+abstraction with interface :=>
+
+// INTERFACE
+interface A {
+    void execute();
+}
+
+abstract class Job implements A{
+}
+class Print extends Job {
+    
+    public void execute() {
+        System.out.println("Print...");
+    }
+}
+
+class Email extends Job {
+  
+    public void execute() {
+        System.out.println("Email...");
+    }
+}
+
+public class Mainnn {
+    public static void main(String[] args) {
+        A p = new Print();
+        A k = new Email();
+        p.execute();
+        k.execute();
+    }
+}
